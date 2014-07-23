@@ -13,9 +13,9 @@ makeCacheMatrix <- function(x = matrix()) {
         x <<- y
         i <<- NULL
     }
-    get <- function() x                             # Retunrs matrix 'x'
+    get <- function() x                             # Returns matrix 'x'
     setinverse <- function(inverse) i <<- inverse   # Modifies the inverse matrix 'i'
-    getinverse <- function() i                      # Returns the stored invese matrix 'i' from cache
+    getinverse <- function() i                      # Returns the stored inverse matrix 'i' from cache
     list(set = set, get = get,  
          setinverse = setinverse,
          getinverse = getinverse)                   # List with the four functions
